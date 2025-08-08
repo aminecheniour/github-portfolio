@@ -4,99 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Projets - [Ton Nom]</title>
-    <style>
-        /* Reset & Base */
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        /* Projet Card */
-        .project {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-bottom: 25px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-        }
-        /* Section Titles */
-        .project-title {
-            margin-top: 0;
-            margin-bottom: 12px;
-            color: #1a5276;
-        }
-        /* Description */
-        .project-desc {
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        /* Image */
-        .project-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        /* Tags or keywords */
-        .tags {
-            margin-top: 10px;
-        }
-        .tag {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            margin-right: 8px;
-            margin-bottom: 5px;
-        }
-        /* Responsive */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 0 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1>Mes Projets - Portfolio</h1>
     <div class="container">
 
-        <!-- Projet DAO Mill Engine -->
         <section class="project">
             <h2 class="project-title">Module DAO - Projet Mill Engine</h2>
             <p class="project-desc">
                 Modélisation de toutes les pièces et assemblage complet d’un mill engine, suivi d'une simulation détaillée.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Mill+Engine" alt="Modélisation Mill Engine" class="project-image" />
+            <img src="images/mill_engine.jpg" alt="Modélisation Mill Engine" class="project-image" />
             <div class="tags">
                 <span class="tag">Modélisation 3D</span>
                 <span class="tag">Assemblage</span>
@@ -105,28 +24,27 @@
             </div>
         </section>
 
-        <!-- Projet Technique d'Assemblage Malaxeur -->
         <section class="project">
             <h2 class="project-title">Module Technique d'Assemblage - Étude de Malaxeur</h2>
             <p class="project-desc">
-                Dimensionnement de la clavette, du frettage de l'arbre, et de la cannelure à flancs parallèles. Étude des procédés de fabrication (usinage, soudage). Simulation des pièces et assemblage d’une scie sauteuse avec CATIA.
+                Dimensionnement de la clavette, du frettage de l'arbre, et de la cannelure à flancs parallèles. Étude des procédés de fabrication (usinage, fraisage, soudage). Simulation des pièces et assemblage d’une scie sauteuse avec CATIA.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Malaxeur+et+Scie+Sauteuse" alt="Malaxeur et Scie Sauteuse" class="project-image" />
+            <img src="images/malaxeur_scie.jpg" alt="Malaxeur et Scie Sauteuse" class="project-image" />
             <div class="tags">
                 <span class="tag">Dimensionnement</span>
                 <span class="tag">Usinage</span>
+                <span class="tag">Fraisage</span>
                 <span class="tag">Soudage</span>
                 <span class="tag">CATIA</span>
             </div>
         </section>
 
-        <!-- Projet Matériaux - Choix matériaux -->
         <section class="project">
             <h2 class="project-title">Module Matériaux - Choix de matériaux</h2>
             <p class="project-desc">
                 Choix du matériau pour une tige de piston d’amortisseur à l’aide du logiciel Granta Selector.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Granta+Selector" alt="Choix de matériaux avec Granta" class="project-image" />
+            <img src="images/granta_selector.jpg" alt="Choix de matériaux avec Granta" class="project-image" />
             <div class="tags">
                 <span class="tag">Matériaux</span>
                 <span class="tag">Granta Selector</span>
@@ -134,41 +52,40 @@
             </div>
         </section>
 
-        <!-- Projet Système automatisé - Ligne de production -->
         <section class="project">
             <h2 class="project-title">Projet Système Automatisé - Ligne de production de gobelets</h2>
             <p class="project-desc">
                 Choix de capteurs industriels et programmation LADDER avec TIA Portal pour automatiser une ligne de production de gobelets.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Ligne+Production+Gobelets" alt="Ligne de production de gobelets" class="project-image" />
+            <img src="images/ligne_production_gobelets.jpg" alt="Ligne de production de gobelets" class="project-image" />
             <div class="tags">
                 <span class="tag">Automatisation</span>
                 <span class="tag">Capteurs industriels</span>
                 <span class="tag">Programmation LADDER</span>
+                <span class="tag">TIA Portal</span>
             </div>
         </section>
 
-        <!-- Projet Bureau de méthode - Cintreuse automatique -->
         <section class="project">
             <h2 class="project-title">Bureau de méthode et étude - Cintreuse automatique</h2>
             <p class="project-desc">
                 Étude, conception et réalisation d’une cintreuse automatique : choix de la solution technique, études mécaniques, modélisation et étude de fabrication.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Cintreuse+Automatique" alt="Cintreuse automatique" class="project-image" />
+            <img src="images/cintreuse_automatique.jpg" alt="Cintreuse automatique" class="project-image" />
             <div class="tags">
                 <span class="tag">Conception</span>
                 <span class="tag">Études mécaniques</span>
                 <span class="tag">Modélisation</span>
+                <span class="tag">Fabrication</span>
             </div>
         </section>
 
-        <!-- Projet énergétique - PEMFC -->
         <section class="project">
             <h2 class="project-title">Projet Énergétique - Modélisation 3D PEMFC</h2>
             <p class="project-desc">
                 Modélisation 3D et simulation avec interprétation des résultats du Proton Exchange Membrane Fuel Cell (PEMFC) à l’aide d’ANSYS.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=PEMFC+Simulation" alt="Simulation PEMFC" class="project-image" />
+            <img src="images/pemfc_simulation.jpg" alt="Simulation PEMFC" class="project-image" />
             <div class="tags">
                 <span class="tag">Énergie</span>
                 <span class="tag">Simulation</span>
@@ -176,27 +93,26 @@
             </div>
         </section>
 
-        <!-- Projet CFD - Pompe centrifuge -->
         <section class="project">
             <h2 class="project-title">Module CFD - Étude et analyse de la cavitation dans une pompe centrifuge</h2>
             <p class="project-desc">
                 Modélisation, maillage CFD, configuration de la simulation, résultats et analyse avec MSC Nastran et MSC Patran pour éléments finis.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Pompe+Centrifuge+CFD" alt="Pompe centrifuge CFD" class="project-image" />
+            <img src="images/pompe_centrifuge_cfd.jpg" alt="Pompe centrifuge CFD" class="project-image" />
             <div class="tags">
                 <span class="tag">CFD</span>
                 <span class="tag">Simulation</span>
                 <span class="tag">MSC Nastran</span>
+                <span class="tag">MSC Patran</span>
             </div>
         </section>
 
-        <!-- Projet Mécanismes à barres -->
         <section class="project">
             <h2 class="project-title">Mécanismes à barres - Synthèse de génération de trajectoire</h2>
             <p class="project-desc">
                 Modélisation géométrique et cinématique du mécanisme Path Generation Synthesis of Planar Double-Slider Linkages via the Elliptic Coupler Curve avec Geogebra.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Mecanismes+Barres" alt="Mécanismes à barres" class="project-image" />
+            <img src="images/mecanismes_barres.jpg" alt="Mécanismes à barres" class="project-image" />
             <div class="tags">
                 <span class="tag">Mécanismes</span>
                 <span class="tag">Géométrie</span>
@@ -204,17 +120,17 @@
             </div>
         </section>
 
-        <!-- Projet Robotique industrielle -->
         <section class="project">
             <h2 class="project-title">Robotique industrielle - Robot RRP</h2>
             <p class="project-desc">
                 Modèle géométrique du robot, animation avec CATIA DMU Kinematics Simulator, commande selon loi prédéfinie et programmation par apprentissage.
             </p>
-            <img src="https://via.placeholder.com/800x400?text=Robot+RRP" alt="Robot RRP" class="project-image" />
+            <img src="images/robot_rrp.jpg" alt="Robot RRP" class="project-image" />
             <div class="tags">
                 <span class="tag">Robotique</span>
                 <span class="tag">CATIA</span>
                 <span class="tag">Programmation</span>
+                <span class="tag">Animation</span>
             </div>
         </section>
 
