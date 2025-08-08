@@ -1,65 +1,91 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
     color: #333;
-}
-
-header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #444;
-}
-
-h1, h2, h3 {
-    color: #005f99;
-}
-
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-top: 30px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.project {
-    margin-bottom: 40px;
-    background: white;
+    margin: 0;
     padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.project img {
-    max-width: 48%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+h1, h2 {
+    color: #2c3e50;
 }
 
-.project img:last-child {
-    margin-right: 0;
-}
-
-footer {
+h1 {
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #666;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Projet Card */
+.project {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Titres de projets */
+.project-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #1a5276;
+}
+
+/* Description */
+.project-desc {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Image du projet */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Tags */
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 0 10px;
+    }
 }
