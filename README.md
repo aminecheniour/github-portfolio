@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Amine CHENIOUR 👋
 
 Welcome to my GitHub portfolio! I'm a mechanical engineering student passionate about engineering, simulation, and programming.
 
@@ -37,9 +37,9 @@ Analyzed structural failure of a train door support using CATIA and simulation t
 
 ## Contact Me
 
-- 📧 Email: your.email@example.com  
-- 🔗 LinkedIn: https://linkedin.com/in/yourprofile  
-- 🌍 Portfolio website: https://your-username.github.io
+- 📧 Email: aminecheniour1555@gmail.com
+- 🔗 LinkedIn: https://ma.linkedin.com/in/amine-cheniour-724089293
+- 🌍 Portfolio website: https://aminecheniour.github.io/github-portfolio/
 
 ---
 
