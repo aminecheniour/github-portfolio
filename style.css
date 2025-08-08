@@ -1,91 +1,84 @@
-/* Reset & Base */
+/* Reset & base */
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #2c3e50;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 40px;
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 
-/* Container */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
+h2 {
+  color: #34495e;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  font-size: 1.8rem;
 }
 
-/* Projet Card */
-.project {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 25px;
-    transition: transform 0.2s ease-in-out;
+h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+p, ul {
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-/* Titres de projets */
-.project-title {
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: #1a5276;
+ul {
+  padding-left: 20px;
 }
 
-/* Description */
-.project-desc {
-    line-height: 1.5;
-    margin-bottom: 15px;
+.projet {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-/* Image du projet */
-.project-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.projet:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Tags */
-.tags {
-    margin-top: 10px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    margin-right: 8px;
-    margin-bottom: 5px;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-    .container {
-        padding: 0 10px;
-    }
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
 }
