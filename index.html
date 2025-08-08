@@ -1,227 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portfolio Projets - [Ton Nom]</title>
-<style>
-  /* Reset et base */
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f7fa;
-    margin: 0;
-    padding: 0 20px 40px;
-    color: #333;
-  }
-  header {
-    text-align: center;
-    padding: 30px 10px 50px;
-    background: #2a9d8f;
-    color: white;
-  }
-  header h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 2.5rem;
-  }
-  header p {
-    font-style: italic;
-    margin-top: 8px;
-  }
-
-  section {
-    max-width: 900px;
-    margin: 0 auto 50px;
-    background: white;
-    border-radius: 8px;
-    padding: 25px 30px;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
-  }
-  section h2 {
-    border-bottom: 3px solid #2a9d8f;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #264653;
-  }
-
-  article.project {
-    margin-bottom: 30px;
-  }
-  article.project:last-child {
-    margin-bottom: 0;
-  }
-  article.project h3 {
-    color: #e76f51;
-    margin-bottom: 8px;
-  }
-  article.project p {
-    line-height: 1.5;
-    margin-bottom: 12px;
-  }
-  article.project ul {
-    list-style: inside disc;
-    margin-bottom: 12px;
-  }
-  article.project img {
-    max-width: 100%;
-    border-radius: 6px;
-    margin-top: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-    color: #888;
-    border-top: 1px solid #ddd;
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    body {
-      padding: 0 10px 20px;
-    }
-    section {
-      padding: 20px;
-    }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Projets - Ingénieur Mécanique</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <h1>Mon Portfolio - Projets Ingénieur Mécanique</h1>
+  </header>
 
-<header>
-  <h1>Mon Portfolio Projets</h1>
-  <p>Projets réalisés durant ma formation en génie mécanique</p>
-</header>
+  <main>
+    <section>
+      <h2>Module DAO</h2>
+      <article class="projet">
+        <h3>Mill Engine</h3>
+        <p>Modélisation de toutes les pièces, assemblage et simulation.</p>
+        <!-- Exemple pour ajouter une image -->
+        <!-- <img src="images/mill_engine.jpg" alt="Mill Engine" /> -->
+      </article>
+    </section>
 
-<section>
-  <h2>Module DAO</h2>
-  <article class="project">
-    <h3>Mill Engine</h3>
-    <p>Modélisation complète des pièces, assemblage et simulation.</p>
-    <!-- Exemple d'image, remplace le chemin -->
-    <!-- <img src="images/mill_engine_assembly.jpg" alt="Assemblage Mill Engine"> -->
-  </article>
-</section>
+    <section>
+      <h2>Module Technique d'Assemblage</h2>
+      <article class="projet">
+        <h3>Étude de Malaxeur</h3>
+        <ul>
+          <li>Dimensionnement de la clavette</li>
+          <li>Dimensionnement de frettage de l'arbre</li>
+          <li>Dimensionnement de la cannelure à flancs parallèles</li>
+        </ul>
+      </article>
+    </section>
 
-<section>
-  <h2>Module Technique d'Assemblage</h2>
-  <article class="project">
-    <h3>Étude de Malaxeur</h3>
-    <ul>
-      <li>Dimensionnement de la clavette</li>
-      <li>Dimensionnement de frettage de l'arbre</li>
-      <li>Dimensionnement de la cannelure à flancs parallèles</li>
-    </ul>
-  </article>
-</section>
+    <section>
+      <h2>Module Procédés de Fabrication</h2>
+      <article class="projet">
+        <h3>TP Usinage et Soudage</h3>
+        <p>Travail sur les procédés : tournage, fraisage et soudage.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Module Procédés de Fabrication</h2>
-  <article class="project">
-    <h3>Travaux Pratiques d'Usinage et Soudage</h3>
-    <p>Expérience en tournage, fraisage et soudage.</p>
-  </article>
-</section>
+    <section>
+      <h2>Module Construction Mécanique</h2>
+      <article class="projet">
+        <h3>Modélisation Scie Sauteuse</h3>
+        <p>Modélisation des pièces et assemblage sous Catia.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Module Construction Mécanique</h2>
-  <article class="project">
-    <h3>Modélisation et Assemblage d'une Scie Sauteuse</h3>
-    <p>Utilisation de Catia pour la modélisation des pièces et assemblage.</p>
-  </article>
-</section>
+    <section>
+      <h2>Module Matériaux</h2>
+      <article class="projet">
+        <h3>Choix de matériaux - Tige de piston d'amortisseur</h3>
+        <p>Utilisation du logiciel Granata Selector.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Module Matériaux</h2>
-  <article class="project">
-    <h3>Choix de matériaux pour tige de piston d'amortisseur</h3>
-    <p>Utilisation du logiciel Granita Selector pour optimiser le choix.</p>
-  </article>
-</section>
+    <section>
+      <h2>Système Automatisé</h2>
+      <article class="projet">
+        <h3>Ligne de Production de Gobelets</h3>
+        <ul>
+          <li>Choix de capteurs industriels</li>
+          <li>Programmation LADDER avec TIA Portal</li>
+        </ul>
+      </article>
+    </section>
 
-<section>
-  <h2>Système Automatisé</h2>
-  <article class="project">
-    <h3>Ligne de production de gobelets</h3>
-    <ul>
-      <li>Choix de capteurs industriels</li>
-      <li>Programmation LADDER avec TIA Portal</li>
-    </ul>
-  </article>
-</section>
+    <section>
+      <h2>Bureau d'Étude et Méthode</h2>
+      <article class="projet">
+        <h3>Cintreuse Automatique</h3>
+        <ul>
+          <li>Choix de la solution technique</li>
+          <li>Études mécaniques</li>
+          <li>Modélisation et étude de fabrication</li>
+        </ul>
+      </article>
+    </section>
 
-<section>
-  <h2>Bureau d'Étude et Méthodes</h2>
-  <article class="project">
-    <h3>Étude, conception et réalisation d'une cintreuse automatique</h3>
-    <ul>
-      <li>Choix de la solution technique</li>
-      <li>Études mécaniques</li>
-      <li>Modélisation et étude de fabrication</li>
-    </ul>
-  </article>
-</section>
+    <section>
+      <h2>Projet Énergétique</h2>
+      <article class="projet">
+        <h3>PEMFC (Pile à Combustible)</h3>
+        <p>Modélisation 3D et simulation avec Ansys. Interprétation des résultats.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Projet Énergétique</h2>
-  <article class="project">
-    <h3>Modélisation 3D et simulation PEMFC (Proton Exchange Membrane Fuel Cell)</h3>
-    <p>Simulation et interprétation des résultats avec Ansys.</p>
-  </article>
-</section>
+    <section>
+      <h2>Module CFD</h2>
+      <article class="projet">
+        <h3>Étude CFD et Analyse de la Cavitation dans une Pompe Centrifuge</h3>
+        <ul>
+          <li>Modélisation de la pompe centrifuge</li>
+          <li>Maillage CFD</li>
+          <li>Configuration et simulation</li>
+          <li>Analyse des résultats</li>
+        </ul>
+      </article>
+    </section>
 
-<section>
-  <h2>Module CFD</h2>
-  <article class="project">
-    <h3>Étude CFD et analyse de cavitation dans une pompe centrifuge</h3>
-    <ul>
-      <li>Modélisation de la pompe centrifuge</li>
-      <li>Maillage CFD</li>
-      <li>Configuration de la simulation</li>
-      <li>Analyse des résultats</li>
-    </ul>
-  </article>
-</section>
+    <section>
+      <h2>Module Éléments Finis</h2>
+      <article class="projet">
+        <h3>Utilisation de MSC Nastran et MSC Patran</h3>
+        <p>Analyse des structures par éléments finis.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Module Éléments Finis</h2>
-  <article class="project">
-    <h3>Analyse par éléments finis avec MSC Nastran et MSC Patran</h3>
-    <p>Modélisation et simulation des structures.</p>
-  </article>
-</section>
+    <section>
+      <h2>Mécanismes à Barres</h2>
+      <article class="projet">
+        <h3>Path Generation Synthesis of Planar Double-Slider Linkages</h3>
+        <p>Modélisation géométrique et cinématique avec GeoGebra.</p>
+      </article>
+    </section>
 
-<section>
-  <h2>Mécanismes à Barres</h2>
-  <article class="project">
-    <h3>Path Generation Synthesis of Planar Double-Slider Linkages via Elliptic Coupler Curve</h3>
-    <p>Modélisation géométrique et cinématique avec GeoGebra.</p>
-  </article>
-</section>
+    <section>
+      <h2>Élément Robotique</h2>
+      <article class="projet">
+        <h3>Robotique Industrielle Robot RRP</h3>
+        <ul>
+          <li>Modèle géométrique du robot</li>
+          <li>Animation avec CATIA – DMU Kinematics Simulator</li>
+          <li>Commande selon loi prédéfinie</li>
+          <li>Programmation par apprentissage</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 
-<section>
-  <h2>Élément Robotique</h2>
-  <article class="project">
-    <h3>Robotique industrielle Robot RRP</h3>
-    <ul>
-      <li>Modèle géométrique du robot</li>
-      <li>Animation avec CATIA – DMU Kinematics Simulator</li>
-      <li>Commande selon une loi prédéfinie</li>
-      <li>Programmation du robot par apprentissage</li>
-    </ul>
-  </article>
-</section>
-
-<footer>
-  <p>© 2025 [Ton Nom]. Portfolio généré automatiquement.</p>
-</footer>
-
+  <footer>
+    <p style="text-align:center; margin-top:40px; color:#777;">© 2025 - Portfolio Ingénieur Mécanique</p>
+  </footer>
 </body>
 </html>
 
-</html>
