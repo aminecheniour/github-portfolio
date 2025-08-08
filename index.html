@@ -1,139 +1,227 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio Projets - [Ton Nom]</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Projets - [Ton Nom]</title>
+<style>
+  /* Reset et base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0 20px 40px;
+    color: #333;
+  }
+  header {
+    text-align: center;
+    padding: 30px 10px 50px;
+    background: #2a9d8f;
+    color: white;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  header p {
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    background: white;
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  }
+  section h2 {
+    border-bottom: 3px solid #2a9d8f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #264653;
+  }
+
+  article.project {
+    margin-bottom: 30px;
+  }
+  article.project:last-child {
+    margin-bottom: 0;
+  }
+  article.project h3 {
+    color: #e76f51;
+    margin-bottom: 8px;
+  }
+  article.project p {
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  article.project ul {
+    list-style: inside disc;
+    margin-bottom: 12px;
+  }
+  article.project img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 0 10px 20px;
+    }
+    section {
+      padding: 20px;
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>Mes Projets - Portfolio</h1>
-    <div class="container">
 
-        <section class="project">
-            <h2 class="project-title">Module DAO - Projet Mill Engine</h2>
-            <p class="project-desc">
-                Modélisation de toutes les pièces et assemblage complet d’un mill engine, suivi d'une simulation détaillée.
-            </p>
-            <img src="images/mill_engine.jpg" alt="Modélisation Mill Engine" class="project-image" />
-            <div class="tags">
-                <span class="tag">Modélisation 3D</span>
-                <span class="tag">Assemblage</span>
-                <span class="tag">Simulation</span>
-                <span class="tag">DAO</span>
-            </div>
-        </section>
+<header>
+  <h1>Mon Portfolio Projets</h1>
+  <p>Projets réalisés durant ma formation en génie mécanique</p>
+</header>
 
-        <section class="project">
-            <h2 class="project-title">Module Technique d'Assemblage - Étude de Malaxeur</h2>
-            <p class="project-desc">
-                Dimensionnement de la clavette, du frettage de l'arbre, et de la cannelure à flancs parallèles. Étude des procédés de fabrication (usinage, fraisage, soudage). Simulation des pièces et assemblage d’une scie sauteuse avec CATIA.
-            </p>
-            <img src="images/malaxeur_scie.jpg" alt="Malaxeur et Scie Sauteuse" class="project-image" />
-            <div class="tags">
-                <span class="tag">Dimensionnement</span>
-                <span class="tag">Usinage</span>
-                <span class="tag">Fraisage</span>
-                <span class="tag">Soudage</span>
-                <span class="tag">CATIA</span>
-            </div>
-        </section>
+<section>
+  <h2>Module DAO</h2>
+  <article class="project">
+    <h3>Mill Engine</h3>
+    <p>Modélisation complète des pièces, assemblage et simulation.</p>
+    <!-- Exemple d'image, remplace le chemin -->
+    <!-- <img src="images/mill_engine_assembly.jpg" alt="Assemblage Mill Engine"> -->
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Module Matériaux - Choix de matériaux</h2>
-            <p class="project-desc">
-                Choix du matériau pour une tige de piston d’amortisseur à l’aide du logiciel Granta Selector.
-            </p>
-            <img src="images/granta_selector.jpg" alt="Choix de matériaux avec Granta" class="project-image" />
-            <div class="tags">
-                <span class="tag">Matériaux</span>
-                <span class="tag">Granta Selector</span>
-                <span class="tag">Choix technique</span>
-            </div>
-        </section>
+<section>
+  <h2>Module Technique d'Assemblage</h2>
+  <article class="project">
+    <h3>Étude de Malaxeur</h3>
+    <ul>
+      <li>Dimensionnement de la clavette</li>
+      <li>Dimensionnement de frettage de l'arbre</li>
+      <li>Dimensionnement de la cannelure à flancs parallèles</li>
+    </ul>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Projet Système Automatisé - Ligne de production de gobelets</h2>
-            <p class="project-desc">
-                Choix de capteurs industriels et programmation LADDER avec TIA Portal pour automatiser une ligne de production de gobelets.
-            </p>
-            <img src="images/ligne_production_gobelets.jpg" alt="Ligne de production de gobelets" class="project-image" />
-            <div class="tags">
-                <span class="tag">Automatisation</span>
-                <span class="tag">Capteurs industriels</span>
-                <span class="tag">Programmation LADDER</span>
-                <span class="tag">TIA Portal</span>
-            </div>
-        </section>
+<section>
+  <h2>Module Procédés de Fabrication</h2>
+  <article class="project">
+    <h3>Travaux Pratiques d'Usinage et Soudage</h3>
+    <p>Expérience en tournage, fraisage et soudage.</p>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Bureau de méthode et étude - Cintreuse automatique</h2>
-            <p class="project-desc">
-                Étude, conception et réalisation d’une cintreuse automatique : choix de la solution technique, études mécaniques, modélisation et étude de fabrication.
-            </p>
-            <img src="images/cintreuse_automatique.jpg" alt="Cintreuse automatique" class="project-image" />
-            <div class="tags">
-                <span class="tag">Conception</span>
-                <span class="tag">Études mécaniques</span>
-                <span class="tag">Modélisation</span>
-                <span class="tag">Fabrication</span>
-            </div>
-        </section>
+<section>
+  <h2>Module Construction Mécanique</h2>
+  <article class="project">
+    <h3>Modélisation et Assemblage d'une Scie Sauteuse</h3>
+    <p>Utilisation de Catia pour la modélisation des pièces et assemblage.</p>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Projet Énergétique - Modélisation 3D PEMFC</h2>
-            <p class="project-desc">
-                Modélisation 3D et simulation avec interprétation des résultats du Proton Exchange Membrane Fuel Cell (PEMFC) à l’aide d’ANSYS.
-            </p>
-            <img src="images/pemfc_simulation.jpg" alt="Simulation PEMFC" class="project-image" />
-            <div class="tags">
-                <span class="tag">Énergie</span>
-                <span class="tag">Simulation</span>
-                <span class="tag">ANSYS</span>
-            </div>
-        </section>
+<section>
+  <h2>Module Matériaux</h2>
+  <article class="project">
+    <h3>Choix de matériaux pour tige de piston d'amortisseur</h3>
+    <p>Utilisation du logiciel Granita Selector pour optimiser le choix.</p>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Module CFD - Étude et analyse de la cavitation dans une pompe centrifuge</h2>
-            <p class="project-desc">
-                Modélisation, maillage CFD, configuration de la simulation, résultats et analyse avec MSC Nastran et MSC Patran pour éléments finis.
-            </p>
-            <img src="images/pompe_centrifuge_cfd.jpg" alt="Pompe centrifuge CFD" class="project-image" />
-            <div class="tags">
-                <span class="tag">CFD</span>
-                <span class="tag">Simulation</span>
-                <span class="tag">MSC Nastran</span>
-                <span class="tag">MSC Patran</span>
-            </div>
-        </section>
+<section>
+  <h2>Système Automatisé</h2>
+  <article class="project">
+    <h3>Ligne de production de gobelets</h3>
+    <ul>
+      <li>Choix de capteurs industriels</li>
+      <li>Programmation LADDER avec TIA Portal</li>
+    </ul>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Mécanismes à barres - Synthèse de génération de trajectoire</h2>
-            <p class="project-desc">
-                Modélisation géométrique et cinématique du mécanisme Path Generation Synthesis of Planar Double-Slider Linkages via the Elliptic Coupler Curve avec Geogebra.
-            </p>
-            <img src="images/mecanismes_barres.jpg" alt="Mécanismes à barres" class="project-image" />
-            <div class="tags">
-                <span class="tag">Mécanismes</span>
-                <span class="tag">Géométrie</span>
-                <span class="tag">Geogebra</span>
-            </div>
-        </section>
+<section>
+  <h2>Bureau d'Étude et Méthodes</h2>
+  <article class="project">
+    <h3>Étude, conception et réalisation d'une cintreuse automatique</h3>
+    <ul>
+      <li>Choix de la solution technique</li>
+      <li>Études mécaniques</li>
+      <li>Modélisation et étude de fabrication</li>
+    </ul>
+  </article>
+</section>
 
-        <section class="project">
-            <h2 class="project-title">Robotique industrielle - Robot RRP</h2>
-            <p class="project-desc">
-                Modèle géométrique du robot, animation avec CATIA DMU Kinematics Simulator, commande selon loi prédéfinie et programmation par apprentissage.
-            </p>
-            <img src="images/robot_rrp.jpg" alt="Robot RRP" class="project-image" />
-            <div class="tags">
-                <span class="tag">Robotique</span>
-                <span class="tag">CATIA</span>
-                <span class="tag">Programmation</span>
-                <span class="tag">Animation</span>
-            </div>
-        </section>
+<section>
+  <h2>Projet Énergétique</h2>
+  <article class="project">
+    <h3>Modélisation 3D et simulation PEMFC (Proton Exchange Membrane Fuel Cell)</h3>
+    <p>Simulation et interprétation des résultats avec Ansys.</p>
+  </article>
+</section>
 
-    </div>
+<section>
+  <h2>Module CFD</h2>
+  <article class="project">
+    <h3>Étude CFD et analyse de cavitation dans une pompe centrifuge</h3>
+    <ul>
+      <li>Modélisation de la pompe centrifuge</li>
+      <li>Maillage CFD</li>
+      <li>Configuration de la simulation</li>
+      <li>Analyse des résultats</li>
+    </ul>
+  </article>
+</section>
+
+<section>
+  <h2>Module Éléments Finis</h2>
+  <article class="project">
+    <h3>Analyse par éléments finis avec MSC Nastran et MSC Patran</h3>
+    <p>Modélisation et simulation des structures.</p>
+  </article>
+</section>
+
+<section>
+  <h2>Mécanismes à Barres</h2>
+  <article class="project">
+    <h3>Path Generation Synthesis of Planar Double-Slider Linkages via Elliptic Coupler Curve</h3>
+    <p>Modélisation géométrique et cinématique avec GeoGebra.</p>
+  </article>
+</section>
+
+<section>
+  <h2>Élément Robotique</h2>
+  <article class="project">
+    <h3>Robotique industrielle Robot RRP</h3>
+    <ul>
+      <li>Modèle géométrique du robot</li>
+      <li>Animation avec CATIA – DMU Kinematics Simulator</li>
+      <li>Commande selon une loi prédéfinie</li>
+      <li>Programmation du robot par apprentissage</li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p>© 2025 [Ton Nom]. Portfolio généré automatiquement.</p>
+</footer>
+
 </body>
+</html>
+
 </html>
