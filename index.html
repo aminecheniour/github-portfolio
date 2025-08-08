@@ -3,76 +3,221 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio - Amine CHENIOUR </title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Projets - [Ton Nom]</title>
+    <style>
+        /* Reset & Base */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        /* Projet Card */
+        .project {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        /* Section Titles */
+        .project-title {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #1a5276;
+        }
+        /* Description */
+        .project-desc {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        /* Image */
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* Tags or keywords */
+        .tags {
+            margin-top: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 5px;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Portfolio de Amine CHENIOUR</h1>
-        <p>Étudiant en génie mécanique, passionné par la modélisation, la simulation et l'innovation.</p>
-    </header>
+    <h1>Mes Projets - Portfolio</h1>
+    <div class="container">
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Actuellement en 2ème année à l'École Mohammadia d'Ingénieurs, je travaille sur plusieurs projets liés au génie mécanique et à la simulation numérique.</p>
-    </section>
+        <!-- Projet DAO Mill Engine -->
+        <section class="project">
+            <h2 class="project-title">Module DAO - Projet Mill Engine</h2>
+            <p class="project-desc">
+                Modélisation de toutes les pièces et assemblage complet d’un mill engine, suivi d'une simulation détaillée.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Mill+Engine" alt="Modélisation Mill Engine" class="project-image" />
+            <div class="tags">
+                <span class="tag">Modélisation 3D</span>
+                <span class="tag">Assemblage</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">DAO</span>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Modélisation CAO : CATIA, SolidWorks</li>
-            <li>Simulation : CFD, FEM</li>
-            <li>Programmation : Python, MATLAB</li>
-            <li>Gestion de versions : Git</li>
-        </ul>
-    </section>
+        <!-- Projet Technique d'Assemblage Malaxeur -->
+        <section class="project">
+            <h2 class="project-title">Module Technique d'Assemblage - Étude de Malaxeur</h2>
+            <p class="project-desc">
+                Dimensionnement de la clavette, du frettage de l'arbre, et de la cannelure à flancs parallèles. Étude des procédés de fabrication (usinage, soudage). Simulation des pièces et assemblage d’une scie sauteuse avec CATIA.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Malaxeur+et+Scie+Sauteuse" alt="Malaxeur et Scie Sauteuse" class="project-image" />
+            <div class="tags">
+                <span class="tag">Dimensionnement</span>
+                <span class="tag">Usinage</span>
+                <span class="tag">Soudage</span>
+                <span class="tag">CATIA</span>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projets</h2>
+        <!-- Projet Matériaux - Choix matériaux -->
+        <section class="project">
+            <h2 class="project-title">Module Matériaux - Choix de matériaux</h2>
+            <p class="project-desc">
+                Choix du matériau pour une tige de piston d’amortisseur à l’aide du logiciel Granta Selector.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Granta+Selector" alt="Choix de matériaux avec Granta" class="project-image" />
+            <div class="tags">
+                <span class="tag">Matériaux</span>
+                <span class="tag">Granta Selector</span>
+                <span class="tag">Choix technique</span>
+            </div>
+        </section>
 
-        <article class="project">
-            <h3>Analyse de cavitation dans une pompe centrifuge</h3>
-            <p><strong>Description :</strong> Étude et simulation des phénomènes de cavitation dans une pompe centrifuge afin d’optimiser sa performance et sa durée de vie.</p>
-            <p><strong>Technologies :</strong> CFD (ANSYS Fluent), Python pour traitement des données.</p>
-            <p><strong>Détails :</strong> Cette étude a permis de comprendre les zones à risque de cavitation et proposer des modifications de conception pour limiter ce phénomène.</p>
-            <p><strong>Galerie :</strong></p>
-            <img src="images/cavitation1.png" alt="Simulation cavitation" />
-            <img src="images/cavitation2.png" alt="Résultats CFD" />
-            <p><a href="https://github.com/your-username/cavitation-pump" target="_blank">Voir le projet sur GitHub</a></p>
-        </article>
+        <!-- Projet Système automatisé - Ligne de production -->
+        <section class="project">
+            <h2 class="project-title">Projet Système Automatisé - Ligne de production de gobelets</h2>
+            <p class="project-desc">
+                Choix de capteurs industriels et programmation LADDER avec TIA Portal pour automatiser une ligne de production de gobelets.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Ligne+Production+Gobelets" alt="Ligne de production de gobelets" class="project-image" />
+            <div class="tags">
+                <span class="tag">Automatisation</span>
+                <span class="tag">Capteurs industriels</span>
+                <span class="tag">Programmation LADDER</span>
+            </div>
+        </section>
 
-        <article class="project">
-            <h3>Modélisation d'une pile à combustible PEMFC</h3>
-            <p><strong>Description :</strong> Conception et modélisation 3D d’une pile à combustible à membrane échangeuse de protons pour analyser son rendement et performance.</p>
-            <p><strong>Technologies :</strong> CATIA V5, MATLAB pour simulation.</p>
-            <p><strong>Détails :</strong> Le modèle permet de simuler les réactions électrochimiques et la distribution des flux, avec une interface utilisateur simple.</p>
-            <p><strong>Galerie :</strong></p>
-            <img src="images/pemfc1.png" alt="Modélisation PEMFC" />
-            <img src="images/pemfc2.png" alt="Simulation MATLAB" />
-            <p><a href="https://github.com/your-username/pemfc-model" target="_blank">Voir le projet sur GitHub</a></p>
-        </article>
+        <!-- Projet Bureau de méthode - Cintreuse automatique -->
+        <section class="project">
+            <h2 class="project-title">Bureau de méthode et étude - Cintreuse automatique</h2>
+            <p class="project-desc">
+                Étude, conception et réalisation d’une cintreuse automatique : choix de la solution technique, études mécaniques, modélisation et étude de fabrication.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Cintreuse+Automatique" alt="Cintreuse automatique" class="project-image" />
+            <div class="tags">
+                <span class="tag">Conception</span>
+                <span class="tag">Études mécaniques</span>
+                <span class="tag">Modélisation</span>
+            </div>
+        </section>
 
-        <article class="project">
-            <h3>Analyse de défaillance d’un support mécanique</h3>
-            <p><strong>Description :</strong> Étude de la rupture d’un support de porte de train avec modélisation et analyse des contraintes mécaniques.</p>
-            <p><strong>Technologies :</strong> CATIA, simulation par éléments finis (FEM).</p>
-            <p><strong>Détails :</strong> Cette analyse a permis d’identifier la cause de la rupture et de proposer une amélioration du design pour renforcer la structure.</p>
-            <p><strong>Galerie :</strong></p>
-            <img src="images/support1.png" alt="Modélisation support" />
-            <img src="images/support2.png" alt="Résultats FEM" />
-            <p><a href="https://github.com/your-username/support-failure-analysis" target="_blank">Voir le projet sur GitHub</a></p>
-        </article>
+        <!-- Projet énergétique - PEMFC -->
+        <section class="project">
+            <h2 class="project-title">Projet Énergétique - Modélisation 3D PEMFC</h2>
+            <p class="project-desc">
+                Modélisation 3D et simulation avec interprétation des résultats du Proton Exchange Membrane Fuel Cell (PEMFC) à l’aide d’ANSYS.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=PEMFC+Simulation" alt="Simulation PEMFC" class="project-image" />
+            <div class="tags">
+                <span class="tag">Énergie</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">ANSYS</span>
+            </div>
+        </section>
 
-    </section>
+        <!-- Projet CFD - Pompe centrifuge -->
+        <section class="project">
+            <h2 class="project-title">Module CFD - Étude et analyse de la cavitation dans une pompe centrifuge</h2>
+            <p class="project-desc">
+                Modélisation, maillage CFD, configuration de la simulation, résultats et analyse avec MSC Nastran et MSC Patran pour éléments finis.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Pompe+Centrifuge+CFD" alt="Pompe centrifuge CFD" class="project-image" />
+            <div class="tags">
+                <span class="tag">CFD</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">MSC Nastran</span>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>📧 Email : <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>🔗 LinkedIn : <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </section>
+        <!-- Projet Mécanismes à barres -->
+        <section class="project">
+            <h2 class="project-title">Mécanismes à barres - Synthèse de génération de trajectoire</h2>
+            <p class="project-desc">
+                Modélisation géométrique et cinématique du mécanisme Path Generation Synthesis of Planar Double-Slider Linkages via the Elliptic Coupler Curve avec Geogebra.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Mecanismes+Barres" alt="Mécanismes à barres" class="project-image" />
+            <div class="tags">
+                <span class="tag">Mécanismes</span>
+                <span class="tag">Géométrie</span>
+                <span class="tag">Geogebra</span>
+            </div>
+        </section>
 
-    <footer>
-        <p>© 2025 [Ton Nom]. Tous droits réservés.</p>
-    </footer>
+        <!-- Projet Robotique industrielle -->
+        <section class="project">
+            <h2 class="project-title">Robotique industrielle - Robot RRP</h2>
+            <p class="project-desc">
+                Modèle géométrique du robot, animation avec CATIA DMU Kinematics Simulator, commande selon loi prédéfinie et programmation par apprentissage.
+            </p>
+            <img src="https://via.placeholder.com/800x400?text=Robot+RRP" alt="Robot RRP" class="project-image" />
+            <div class="tags">
+                <span class="tag">Robotique</span>
+                <span class="tag">CATIA</span>
+                <span class="tag">Programmation</span>
+            </div>
+        </section>
+
+    </div>
 </body>
 </html>
