@@ -60,10 +60,39 @@ body{
   border:1px solid rgba(56,189,248,0.06);
 }
 
-/* quick nav */
-.quick-nav{ display:flex; gap:12px; margin-top:14px }
-.quick-nav a{ color:var(--soft); text-decoration:none; padding:8px 12px; border-radius:8px; font-weight:600; font-size:.95rem; background:transparent}
-.quick-nav a.active{ background:linear-gradient(90deg, rgba(56,189,248,0.12), rgba(56,189,248,0.06)); color:var(--accent) }
+/* Styles pour la navigation des projets en bas de page */
+.navigation-projets {
+    position: fixed;       /* Toujours visible en bas */
+    bottom: 0;             /* Collé en bas */
+    left: 0;               /* Bord gauche */
+    right: 0;              /* Bord droit */
+    height: 60px;          /* Hauteur fixe */
+    background-color: #f4f4f4;
+    display: flex;         /* Flexbox pour alignement horizontal */
+    justify-content: space-between; /* Un bouton à gauche, l'autre à droite */
+    align-items: center;   /* Centrer verticalement */
+    padding: 0 30px;       /* Espacement horizontal */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;         /* Au-dessus du contenu */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Styles pour les liens boutons */
+.navigation-projets a {
+    background-color: #0366d6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-projets a:hover {
+    background-color: #024e9a;
+}
+
 
 /* ============== MAIN ============== */
 main{ max-width:1100px; margin:26px auto; padding:0 16px 80px }
