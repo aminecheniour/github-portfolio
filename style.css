@@ -181,7 +181,7 @@ main {
 }
 
 .galerie img:hover {
-    transform: scale(1.05);  /* Effet léger zoom au survol */
+    transform: scale(1.0);  /* Effet léger zoom au survol */
 }
 
 /* Sur petits écrans, images en colonne */
