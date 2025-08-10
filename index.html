@@ -1,87 +1,219 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - [Ton Nom]</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - [Ton Nom]</title>
+
+  <!-- Police (optionnel, remplace si tu veux) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="images/moi.jpg" alt="Photo de moi" class="photo-profil">
+  <header class="site-header">
+    <div class="hero">
+      <div class="photo">
+        <!-- Remplace par ton image -->
+        <img src="images/moi.jpg" alt="Photo de [Ton Nom]" />
+      </div>
+      <div class="intro">
         <h1>[Ton Nom]</h1>
-        <p>Élève ingénieur en Génie Mécanique à l'École Mohammadia d'Ingénieurs, ancien élève de classes préparatoires.</p>
-        <p>Compétences logicielles : CATIA V5, SolidWorks, Ansys, MSC Nastran/Patran, TIA Portal, Granita Selector, GeoGebra...</p>
-    </header>
+        <p class="role">Élève ingénieur — Génie Mécanique | École Mohammadia d'Ingénieurs (ex-classes préparatoires)</p>
+        <p class="bio">
+          Passionné par la modélisation 3D, la simulation numérique, la conception mécanique et l’automatisation industrielle.
+          J'aime transformer des idées en modèles fiables et des modèles en systèmes fonctionnels.
+        </p>
 
-    <main>
-        <h2>Mes Projets</h2>
-        <div class="projets">
-            <div class="projet-card">
-                <h3>Mill Engine</h3>
-                <p>Modélisation complète des pièces, assemblage et simulation.</p>
-                <a href="projet1.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Étude de Malaxeur</h3>
-                <p>Dimensionnement de clavette, frettage d’arbre et cannelure.</p>
-                <a href="projet2.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Procédés de Fabrication</h3>
-                <p>Étude des procédés et TP (tournage, fraisage, soudage).</p>
-                <a href="projet3.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Scie Sauteuse</h3>
-                <p>Modélisation des pièces et assemblage sur CATIA.</p>
-                <a href="projet4.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Choix de Matériaux</h3>
-                <p>Choix du matériau pour une tige de piston d’amortisseur avec Granita Selector.</p>
-                <a href="projet5.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Ligne de Production de Gobelets</h3>
-                <p>Choix de capteurs et programmation Ladder avec TIA Portal.</p>
-                <a href="projet6.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Cintreuse Automatique</h3>
-                <p>Conception, choix technique, modélisation et étude de fabrication.</p>
-                <a href="projet7.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>PEMFC</h3>
-                <p>Modélisation 3D et simulation avec interprétation des résultats sur Ansys.</p>
-                <a href="projet8.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Pompe Centrifuge - CFD</h3>
-                <p>Modélisation, maillage, simulation et analyse de la cavitation.</p>
-                <a href="projet9.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Analyse Éléments Finis</h3>
-                <p>Études avec MSC Nastran et Patran sur structures mécaniques.</p>
-                <a href="projet10.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Mécanismes à Barres</h3>
-                <p>Path Generation Synthesis et modélisation cinématique avec GeoGebra.</p>
-                <a href="projet11.html" class="btn">Voir le projet</a>
-            </div>
-            <div class="projet-card">
-                <h3>Robotique Industrielle</h3>
-                <p>Modèle géométrique, animation et programmation sur CATIA.</p>
-                <a href="projet12.html" class="btn">Voir le projet</a>
-            </div>
+        <div class="skills">
+          <span>CATIA V5</span>
+          <span>ANSYS</span>
+          <span>MSC Nastran / Patran</span>
+          <span>TIA Portal (LADDER)</span>
+          <span>Granita Selector</span>
+          <span>GeoGebra</span>
         </div>
-    </main>
+      </div>
+    </div>
 
-    <footer>
-        <p>© 2025 [Ton Nom] - Portfolio</p>
-    </footer>
+    <nav class="quick-nav">
+      <a href="#projects" class="active">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects" class="projects-section">
+      <h2>Projets sélectionnés</h2>
+      <p class="lead">Clique sur une carte pour voir le détail du projet.</p>
+
+      <div class="projects-grid">
+        <!-- 1 -->
+        <article class="card">
+          <a class="card-link" href="projet1.html" aria-label="Mill Engine">
+            <div class="card-media">
+              <img src="images/mill.jpg" alt="Mill Engine (aperçu)" />
+            </div>
+            <div class="card-body">
+              <h3>Mill Engine — Module DAO</h3>
+              <p>Modélisation complète des pièces, assemblage des composants puis simulation fonctionnelle pour validation.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 2 -->
+        <article class="card">
+          <a class="card-link" href="projet2.html" aria-label="Étude de Malaxeur">
+            <div class="card-media">
+              <img src="images/malaxeur.jpg" alt="Étude de Malaxeur" />
+            </div>
+            <div class="card-body">
+              <h3>Étude de Malaxeur — Assemblage</h3>
+              <p>Dimensionnement de la clavette, calcul de frettage de l'arbre et dimensionnement de la cannelure à flancs parallèles.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 3 -->
+        <article class="card">
+          <a class="card-link" href="projet3.html" aria-label="Procédés de fabrication">
+            <div class="card-media">
+              <img src="images/usinage.jpg" alt="Usinage & soudage" />
+            </div>
+            <div class="card-body">
+              <h3>Procédés de fabrication</h3>
+              <p>TP d'usinage (tournage, fraisage) et opérations de soudage : compréhension pratique des procédés.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 4 -->
+        <article class="card">
+          <a class="card-link" href="projet4.html" aria-label="Scie Sauteuse">
+            <div class="card-media">
+              <img src="images/scie.jpg" alt="Scie sauteuse" />
+            </div>
+            <div class="card-body">
+              <h3>Scie sauteuse — Construction mécanique</h3>
+              <p>Modélisation détaillée des pièces et assemblage sous CATIA V5 pour étude fonctionnelle.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 5 -->
+        <article class="card">
+          <a class="card-link" href="projet5.html" aria-label="Choix de matériaux">
+            <div class="card-media">
+              <img src="images/tige_piston.jpg" alt="Choix de matériaux" />
+            </div>
+            <div class="card-body">
+              <h3>Choix de matériaux — Tige de piston</h3>
+              <p>Sélection du matériau optimal pour une tige de piston d'amortisseur à l'aide de Granita Selector.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 6 -->
+        <article class="card">
+          <a class="card-link" href="projet6.html" aria-label="Ligne de production de gobelets">
+            <div class="card-media">
+              <img src="images/ligne_gobelets.jpg" alt="Ligne de production" />
+            </div>
+            <div class="card-body">
+              <h3>Ligne de production de gobelets — Automatisation</h3>
+              <p>Choix des capteurs industriels et programmation Ladder avec TIA Portal pour une ligne automatisée.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 7 -->
+        <article class="card">
+          <a class="card-link" href="projet7.html" aria-label="Cintreuse automatique">
+            <div class="card-media">
+              <img src="images/cintreuse.jpg" alt="Cintreuse automatique" />
+            </div>
+            <div class="card-body">
+              <h3>Cintreuse automatique — BE & Méthodes</h3>
+              <p>Étude et conception d'une cintreuse automatique : solution technique, études mécaniques et modélisation.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 8 -->
+        <article class="card">
+          <a class="card-link" href="projet8.html" aria-label="PEMFC">
+            <div class="card-media">
+              <img src="images/pemfc.jpg" alt="PEMFC" />
+            </div>
+            <div class="card-body">
+              <h3>PEMFC — Projet énergétique</h3>
+              <p>Modélisation 3D et simulation (ANSYS) d'une pile à membrane échangeuse de protons ; interprétation des résultats.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 9 -->
+        <article class="card">
+          <a class="card-link" href="projet9.html" aria-label="CFD cavitation">
+            <div class="card-media">
+              <img src="images/cavitation.jpg" alt="Cavitation pompe" />
+            </div>
+            <div class="card-body">
+              <h3>CFD — Cavitation dans pompe centrifuge</h3>
+              <p>Modélisation, maillage, configuration de la simulation et analyse de la cavitation.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 10 -->
+        <article class="card">
+          <a class="card-link" href="projet10.html" aria-label="Éléments finis">
+            <div class="card-media">
+              <img src="images/nastran.jpg" alt="MSC Nastran Patran" />
+            </div>
+            <div class="card-body">
+              <h3>Éléments finis — MSC Nastran & Patran</h3>
+              <p>Analyses structurelles par éléments finis pour évaluer la tenue mécanique des pièces.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 11 -->
+        <article class="card">
+          <a class="card-link" href="projet11.html" aria-label="Mécanismes à barres">
+            <div class="card-media">
+              <img src="images/geogebra.jpg" alt="Mécanisme double-slider" />
+            </div>
+            <div class="card-body">
+              <h3>Mécanismes à barres — Synthèse de trajectoire</h3>
+              <p>Path generation synthesis of planar double-slider linkages via the elliptic coupler curve; modélisation et cinématique (GeoGebra).</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- 12 -->
+        <article class="card">
+          <a class="card-link" href="projet12.html" aria-label="Robotique industrielle">
+            <div class="card-media">
+              <img src="images/robot_rrp.jpg" alt="Robot RRP" />
+            </div>
+            <div class="card-body">
+              <h3>Robotique industrielle — Robot RRP</h3>
+              <p>Modèle géométrique, animation CATIA (DMU Kinematics) et programmation/commande par apprentissage.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Pour plus d'infos ou pour obtenir les rapports/simulations : <strong>ton.email@example.com</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 [Ton Nom] — Portfolio ingénieur mécanique</p>
+  </footer>
 </body>
 </html>
