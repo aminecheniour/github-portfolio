@@ -1,154 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Amine CHENIUR</title>
+  <title>Portfolio - Présentation</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <header>
-    <div class="header-container">
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="mill-engine.html">Mill Engine</a></li>
+      <li><a href="malaxeur.html">Malaxeur</a></li>
+      <!-- ajoute les autres projets ici -->
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header>
       <div class="profile-photo">
-        <img src="1.png" alt="Photo de Amine CHENIOUR" />
+        <img src="images/ton-image.jpg" alt="Photo de profil" />
       </div>
-      <div class="presentation">
-        <h1>Amine CHENIOUR</h1>
-        <h2>Étudiant Ingénieur en Génie Mécanique</h2>
-        <p>
-          Après un parcours rigoureux en classes préparatoires scientifiques, je poursuis mes études à l’École Mohammadia
-          d'Ingénieurs (EMI), où je me spécialise en génie mécanique. Passionné par la conception, la simulation et
-          l’automatisation industrielle, je combine rigueur scientifique et créativité technique pour relever des défis
-          complexes.
-        </p>
-        <h3>Logiciels maîtrisés</h3>
-        <p>
-          CATIA V5, ANSYS, MSC Nastran & Patran, GeoGebra, TIA Portal, Granata Selector, DMU Kinematics Simulator.
-        </p>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="projects-section">
-      <h2>Mes Projets</h2>
-
-      <article class="project">
-        <h3>Mill Engine - Module DAO</h3>
-        <p>
-          Réalisation complète de la modélisation des pièces d'un moteur (Mill Engine), assemblage des composants, puis
-          simulation dynamique afin d'analyser son comportement fonctionnel.
-        </p>
-        <img src="Gallery/Mill engine.png" alt="Mill Engine" />
-      </article>
-
-      <article class="project">
-        <h3>Étude de Malaxeur - Module Technique d'Assemblage</h3>
-        <p>
-          Dimensionnement précis des éléments mécaniques essentiels : clavette, frettage de l'arbre et cannelure à flancs
-          parallèles, garantissant la fiabilité et la sécurité du malaxeur.
-        </p>
-        <!-- <img src="images/malaxeur.jpg" alt="Malaxeur" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Procédés de Fabrication - TP Usinage & Soudage</h3>
-        <p>
-          Acquisition des compétences pratiques en usinage (tournage, fraisage) et soudage à travers des travaux
-          pratiques, maîtrisant ainsi les procédés industriels essentiels.
-        </p>
-        <!-- <img src="images/procedes_fabrication.jpg" alt="Procédés de fabrication" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Modélisation d'une Scie Sauteuse - Construction Mécanique</h3>
-        <p>
-          Modélisation détaillée des pièces et assemblage complet d’une scie sauteuse avec CATIA V5, alliant précision et
-          fonctionnalité.
-        </p>
-        <!-- <img src="images/scie_sauteuse.jpg" alt="Scie sauteuse" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Choix de Matériaux - Tige de Piston d’Amortisseur</h3>
-        <p>
-          Étude approfondie du choix de matériaux pour une tige de piston d’amortisseur en utilisant le logiciel Granata
-          Selector, assurant performance et durabilité.
-        </p>
-        <!-- <img src="images/tige_piston.jpg" alt="Tige de piston" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Ligne de Production de Gobelets - Système Automatisé</h3>
-        <p>
-          Conception et programmation d’une ligne de production automatisée, incluant le choix des capteurs industriels et
-          la programmation en langage LADDER via TIA Portal.
-        </p>
-        <!-- <img src="images/ligne_production.jpg" alt="Ligne de production" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Cintreuse Automatique - Bureau d'Étude et Méthodes</h3>
-        <p>
-          Étude complète de conception et réalisation d’une cintreuse automatique : choix de solution technique, études
-          mécaniques et modélisation pour la fabrication.
-        </p>
-        <!-- <img src="images/cintreuse.jpg" alt="Cintreuse automatique" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Modélisation & Simulation PEMFC - Projet Énergétique</h3>
-        <p>
-          Modélisation 3D et simulation numérique de la pile à membrane échangeuse de protons (PEMFC) avec ANSYS,
-          interprétation détaillée des résultats.
-        </p>
-        <!-- <img src="images/pemfc.jpg" alt="PEMFC" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Étude CFD & Analyse de la Cavitation - Pompe Centrifuge</h3>
-        <p>
-          Modélisation, maillage CFD, configuration et simulation d’une pompe centrifuge, suivies d’une analyse approfondie
-          de la cavitation.
-        </p>
-        <!-- <img src="images/cavitation_pompe.jpg" alt="Cavitation Pompe" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Analyse par Éléments Finis - Structures</h3>
-        <p>
-          Utilisation des logiciels MSC Nastran et MSC Patran pour la modélisation et l’analyse structurale par éléments
-          finis.
-        </p>
-        <!-- <img src="images/element_finis.jpg" alt="Analyse éléments finis" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Synthèse de Mécanismes - Module Mécanismes à Barres</h3>
-        <p>
-          Modélisation géométrique et cinématique du mécanisme double-slider à l’aide de la courbe elliptique de
-          couplage, réalisée avec GeoGebra.
-        </p>
-        <!-- <img src="images/mecanisme_barres.jpg" alt="Mécanisme à barres" /> -->
-      </article>
-
-      <article class="project">
-        <h3>Robotique Industrielle - Robot RRP</h3>
-        <p>
-          Modèle géométrique, animation avec CATIA DMU Kinematics Simulator, commande selon loi prédéfinie et programmation
-          par apprentissage d’un robot industriel de type RRP.
-        </p>
-        <!-- <img src="images/robot_rrp.jpg" alt="Robot RRP" /> -->
-      </article>
-    </section>
+      <section class="presentation">
+        <h1>Ton Nom</h1>
+        <h2>Ingénieur en Génie Mécanique</h2>
+        <p>Après une classe préparatoire et une formation à l'École Mohammadia d'Ingénieurs, je maîtrise les logiciels CATIA, ANSYS, TIA Portal, Msc Nastran, GeoGebra, et d'autres.</p>
+        <h3>Mes projets</h3>
+        <ul>
+          <li><a href="mill-engine.html">Projet Mill Engine – Modélisation, assemblage et simulation</a></li>
+          <li><a href="malaxeur.html">Étude de malaxeur – Dimensionnement et calculs mécaniques</a></li>
+          <!-- autres liens -->
+        </ul>
+      </section>
+    </header>
   </main>
-
-  <footer>
-    <p>© 2025 - [Ton Nom] - Portfolio Ingénieur Mécanique</p>
-  </footer>
 </body>
-
 </html>
