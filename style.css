@@ -93,6 +93,10 @@ body{
     background-color: #024e9a;
 }
 
+/* quick nav */
+.quick-nav{ display:flex; gap:12px; margin-top:14px }
+.quick-nav a{ color:var(--soft); text-decoration:none; padding:8px 12px; border-radius:8px; font-weight:600; font-size:.95rem; background:transparent}
+.quick-nav a.active{ background:linear-gradient(90deg, rgba(56,189,248,0.12), rgba(56,189,248,0.06)); color:var(--accent) }
 
 /* ============== MAIN ============== */
 main{ max-width:1100px; margin:26px auto; padding:0 16px 80px }
