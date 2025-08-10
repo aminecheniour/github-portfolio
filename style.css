@@ -60,34 +60,6 @@ body{
   border:1px solid rgba(56,189,248,0.06);
 }
 
-/* Styles pour la navigation des projets en bas de page */
-.navigation-projets {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #0b1422; /* même couleur que le fond pour éliminer bande blanche */
-  box-sizing: border-box;
-  z-index: 100;
-}
-
-/* Si les boutons ont un fond blanc, les garder bleus comme avant */
-.navigation-projets a {
-  background-color: #0066ff;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-}
-
-.navigation-projets a:hover {
-  background-color: #004bb5;
-}
 /* quick nav */
 .quick-nav{ display:flex; gap:12px; margin-top:14px }
 .quick-nav a{ color:var(--soft); text-decoration:none; padding:8px 12px; border-radius:8px; font-weight:600; font-size:.95rem; background:transparent}
@@ -148,3 +120,48 @@ main{ max-width:1100px; margin:26px auto; padding:0 16px 80px }
   .photo img{ width:140px; height:140px }
   .intro .bio{ max-width:90% }
 }
+/* ============== MAIN ============== */
+main {
+  max-width: 1100px;
+  margin: 26px auto;
+  padding: 0 16px 120px; /* Augmenté padding-bottom pour nav fixe */
+}
+
+/* ============== NAVIGATION PROJETS EN BAS ============== */
+.navigation-projets {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  font-weight: 600;
+  font-size: 1rem;
+  z-index: 1100;
+  user-select: none;
+}
+
+.navigation-projets a {
+  background-color: var(--accent);
+  color: var(--bg);
+  padding: 10px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+.navigation-projets a:hover,
+.navigation-projets a:focus {
+  background-color: #1fb6ff;
+  color: #000;
+  box-shadow: 0 6px 16px rgba(31, 182, 255, 0.6);
+  outline: none;
+}
+
