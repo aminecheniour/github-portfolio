@@ -191,31 +191,4 @@ main {
         margin-bottom: 20px;
     }
 }
-}
-.galeriee {
-    display: flex;
-    justify-content: center; /* Centrer les images */
-    gap: 20px;               /* Espace entre les images */
-    margin-top: 30px;
-    flex-wrap: wrap;         /* Permet à la galerie de s’adapter en petits écrans */
-}
 
-.galeriee img {
-    width: 22%;              /* Chaque image prend environ 1/3 de la largeur */
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.galeriee img:hover {
-    transform: scale(1.05);  /* Effet léger zoom au survol */
-}
-
-/* Sur petits écrans, images en colonne */
-@media (max-width: 600px) {
-    .galeriee img {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-}
