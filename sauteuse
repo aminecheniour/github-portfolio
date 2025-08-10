@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scie Sauteuse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="projet-header">
+        <h1>Scie Sauteuse</h1>
+        <a href="index.html" class="btn-retour">← Retour</a>
+    </header>
+
+    <main>
+        <p>Modélisation des pièces, assemblage et simulation du fonctionnement d'une scie sauteuse sur CATIA V5.</p>
+        <div class="galerie">
+            <img src="images/scie1.jpg" alt="Scie sauteuse vue 1">
+            <img src="images/scie2.jpg" alt="Scie sauteuse vue 2">
+        </div>
+    </main>
+</body>
+</html>
