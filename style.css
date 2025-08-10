@@ -1,38 +1,36 @@
-/* ===== Reset et base ===== */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background: #121830;
+  color: #e0e6f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
-body {
-  background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
-  color: #e0e6f1;
-  line-height: 1.6;
-  min-height: 100vh;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
+a {
+  color: #40c4ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
   max-width: 900px;
-  width: 100%;
-  background: #1f2a44cc; /* semi transparent dark */
+  margin: 100px auto 50px;
+  background: #1f2a44cc;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
   padding: 40px 50px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
   backdrop-filter: blur(10px);
 }
 
-/* ===== Header ===== */
 header {
   display: flex;
   gap: 40px;
   align-items: center;
-  margin-bottom: 60px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .profile-photo img {
@@ -42,17 +40,6 @@ header {
   border: 4px solid #40c4ff;
   object-fit: cover;
   box-shadow: 0 0 20px #40c4ffaa;
-  transition: transform 0.4s ease;
-}
-
-.profile-photo img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #40c4ffdd;
-}
-
-.presentation {
-  flex: 1;
-  min-width: 280px;
 }
 
 .presentation h1 {
@@ -66,7 +53,7 @@ header {
 .presentation h2 {
   font-weight: 600;
   font-size: 1.3rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #9ad6ff;
 }
 
@@ -74,112 +61,72 @@ header {
   font-size: 1.1rem;
   color: #cfd8f7cc;
   margin-bottom: 18px;
-  font-weight: 400;
   line-height: 1.5;
 }
 
-.presentation h3 {
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #78aaff;
-  letter-spacing: 0.3px;
-  border-bottom: 2px solid #40c4ff;
-  padding-bottom: 5px;
+.presentation ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #9ad6ff;
 }
 
-/* ===== Projets ===== */
-.projects-section h2 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 45px;
-  text-align: center;
-  color: #40c4ff;
-  text-shadow: 0 0 20px #40c4ffdd;
-  letter-spacing: 1px;
-}
-
-.project {
-  background: #2e3b57cc;
-  padding: 25px 30px;
-  margin-bottom: 35px;
-  border-radius: 16px;
-  box-shadow: inset 0 0 5px #40c4ff55;
-  transition: all 0.35s ease;
-  cursor: default;
-}
-
-.project:hover {
-  box-shadow: 0 0 25px #40c4ffdd;
-  transform: translateY(-6px);
-}
-
-.project h3 {
+.project h1 {
   color: #80c9ff;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-  letter-spacing: 0.6px;
   text-shadow: 0 0 8px #40c4ffcc;
 }
 
 .project p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: #d0e4ffcc;
-  line-height: 1.5;
+  line-height: 1.6;
   white-space: pre-line;
 }
 
-/* Images projets */
 .project img {
-  margin-top: 22px;
+  margin-top: 25px;
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 8px 30px #40c4ff88;
   transition: transform 0.3s ease;
-  cursor: pointer;
 }
 
 .project img:hover {
   transform: scale(1.05);
 }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #7eaaffcc;
-  font-weight: 400;
-  letter-spacing: 0.7px;
+/* Nav menu fixe en haut */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #19243ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  z-index: 10;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 720px) {
-  header {
-    justify-content: center;
-  }
-
-  .presentation {
-    text-align: center;
-  }
-
-  .presentation h1 {
-    font-size: 2.4rem;
-  }
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  list-style: none;
+  margin: 0;
 }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 30px 25px;
-  }
+.nav-menu li a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  color: #9ad6ff;
+}
 
-  .presentation h1 {
-    font-size: 2rem;
-  }
-
-  .projects-section h2 {
-    font-size: 2rem;
-  }
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background-color: #40c4ff;
+  color: #121830;
 }
