@@ -164,6 +164,41 @@ main {
   box-shadow: 0 6px 16px rgba(31, 182, 255, 0.6);
   outline: none;
 }
+/* Navigation fixe pour stages */
+.navigation-stages {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: #0b1220; /* même style que tes cards */
+  display: flex;
+  justify-content: center; /* centrer les liens */
+  align-items: center;
+  gap: 16px; /* espace entre les boutons */
+  padding: 0 16px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  z-index: 1100;
+}
+
+.navigation-stages a {
+  background-color: #38bdf8; /* accent color */
+  color: #0f1724; /* texte sombre */
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+.navigation-stages a:hover,
+.navigation-stages a:focus {
+  background-color: #1fb6ff;
+  color: #000;
+  box-shadow: 0 6px 16px rgba(31, 182, 255, 0.6);
+  outline: none;
+}
 .galerie {
     display: flex;
     justify-content: center; /* Centrer les images */
