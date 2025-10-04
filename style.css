@@ -171,23 +171,25 @@ main {
   left: 0;
   right: 0;
   height: 56px;
-  background-color: #0b1220; /* même style que tes cards */
+  background-color: var(--card);
   display: flex;
-  justify-content: center; /* centrer les liens */
+  justify-content: space-between;
   align-items: center;
-  gap: 16px; /* espace entre les boutons */
-  padding: 0 16px;
+  padding: 0 24px;
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  font-weight: 600;
+  font-size: 1rem;
   z-index: 1100;
+  user-select: none;
 }
 
 .navigation-stages a {
-  background-color: #38bdf8; /* accent color */
-  color: #0f1724; /* texte sombre */
-  padding: 10px 20px;
+  background-color: var(--accent);
+  color: var(--bg);
+  padding: 10px 22px;
   border-radius: 12px;
   text-decoration: none;
-  font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
 }
